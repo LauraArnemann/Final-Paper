@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,hyperref}
+
+\normalem
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}{Proposition}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}[hyp]
+\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
+
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
+
+\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\begin{document}
+
+\input{introduction.tex}
+\input{design.tex}
+\input{descriptives.tex}
+\input{results.tex}
+\input{heterogeneity.tex}
+\input{Conclusion.tex}
+
+
+\begin{table}[h!]
+
+\caption{Which of the following statements do you agree with? (Regression Results 1 )} 
+\hskip -2.5cm 
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+\ \  &Program & Clustered SE & Time Distribution & Bonferroni correction \\
+\hline
+\multicolumn{6}{l}{\textbf{2.a The Lender Countries wanted to help the borrowing countries}} \\
+\ \   &-0.131{***}&-0.131{**}&-0.148{***} &-0.131{*** \\ 
+&(0.028) & (0.028) & (0.031) & (0.028)  \\ 
+\multicolumn{6}{l}{\textbf{2.b The Lender Countries wanted to help themselves to avoid a crisis at home}} \\
+\ \  &0.001{}&0.001{}&0.005{}&0.001{} \\ 
+&(0.018) & (0.018) & (0.019) & (0.018)   \\
+\multicolumn{6}{l}{\textbf{2.c The Lender Countries wanted to impose institutional change upon the borrower countries }} \\
+\ \   &0.111{***}&0.111{}&0.134{***} &0.111{***} \\ 
+&(0.030) & (0.030) & (0.033) & (0.030) \\
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Standard-Errors in Parentheses \quad  ***p$<$0.01, **p$<$0.05, *p$<$0.1   
+\end{tablenotes}
+\end{table}
+\begin{table}[h!]
+\caption{Which of the following statements do you agree with? (Regression Results 1 )} 
+\hskip -2.5cm 
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+\ \  &Program & Clustered SE & Time Distribution & Bonferroni correction \\
+\hline
+\multicolumn{5}{l}{\textbf{ 5a. The rescue experience made many citizens in the borrower countries feel guilty}} \\
+\ \   &0.091{***}&0.091{**}&0.079{**} &0.091{**}\\ 
+&(0.029) & (0.029) & (0.032) & (0.029)   \\ 
+\multicolumn{5}{l}{\textbf{ 5b. The rescue experience made many citizens in the borrower countries feel exploited}} \\
+\ \  &0.171{***}&0.171{***}&0.148{***}&0.171{***} \\ 
+&(0.030) & (0.030) & (0.033) & (0.030)  \\
+\multicolumn{5}{l}{\textbf{ 5c. The rescue experience made many citizens in the borrower countries feel inferior }} \\
+\ \  &0.094{***}&0.094{*}&0.084{***}&0.094{**} \\ 
+&(0.029) & (0.029) & (0.032) & (0.029)  \\
+\multicolumn{5}{l}{\textbf{ 5d. The rescue experience made many citizens in the lender countries feel exploited}} \\
+\ \   &0.011{}&0.011{}&-0.001{} &0.011{}\\ 
+&(0.030) & (0.030) & (0.033) & (0.030)   \\ 
+\multicolumn{5}{l}{\textbf{ 5e. The rescue experience made many citizens in the lender countries feel disappointed}} \\
+\ \  &-0.030{}&-0.030{}&-0.033{}&-0.030{}\\ 
+&(0.030) & (0.030) & (0.033) & (0.030)  \\
+\multicolumn{5}{l}{\textbf{ 5f. The rescue strengthened friendships between citizens}} \\
+\ \  &-0.025{}&-0.025{}&-0.040{}&-0.025{}\\ 
+&(0.028) & (0.028) & (0.031) & (0.028) \\
+\hline
+\multicolumn{5}{l}{\textbf{7. Greece will fully pay back its debt}} \\
+\ \   &0.133{***}&0.133{***}&0.129{***} &0.133{***}\\ 
+&(0.022) & (0.022) & (0.024) & (0.022)   \\ 
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Standard-Errors in Parentheses \quad ***p$<$0.01, **p$<$0.05, *p$<$0.1  
+\end{tablenotes}
+\end{table}
+\begin{table}[h!]
+\caption{Which party was responsible for and benefitted most from the rescue package (Regression results 1) ?} 
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+\ \  &Program & Clustered SE & Time Distribution & Bonferroni correction \\
+\multicolumn{5}{l}{\textbf{3. Who was the Driving Force behind signing the memorandum?}} \\
+\ \  Lender Countries &0.132{***}&0.132{}&0.158{***} & 0.132{***} \\ 
+&(0.035) & (0.035) & (0.038)& (0.035)\\ 
+\multicolumn{5}{l}{\textbf{4. Who was the main beneficiary from the program? }} \\ 
+\ \  Lender Countries &0.280{***}&0.280{}&0.282{***}& 0.280{***}\\ 
+&(0.033) & (0.033) & (0.037) & (0.033)   \\
+\hline
+\multicolumn{5}{l}{\textbf{6. Who primarily benefited from the loans to Greece}} \\
+\ \   &0.203{***}  &0.203{**}&0.205{***} &0.203{***}\\ 
+   &(0.029) & (0.029) & (0.033) & (0.029)   \\ 
+\hline\hline
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Standard-Errors in Parentheses \quad  ***p$<$0.01, **p$<$0.05, *p$<$0.1   
+\end{tablenotes}
+\end{table}
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{bibliography.bib}
+\end{document}
